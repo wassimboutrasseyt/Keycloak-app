@@ -15,9 +15,9 @@ public class ProductController {
         this.productRepository = productRepository;
 
     }
-    @GetMapping("/index")
-    public String getMethodName(@RequestParam String param) {
-        return new String();
+    @GetMapping("/")
+    public String getMethodName() {
+        return "index";
     }
     @GetMapping("/getProducts")
     public String getProducts(Model model) {
